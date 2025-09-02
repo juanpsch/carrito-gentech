@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Teclado Mecánico RGB",
+        "price": 99.99,
+        "image": "https://placehold.co/150x150/007bff/ffffff?text=Teclado",
+        "description": "Retroiluminación personalizable, switches Cherry MX."
+    },
+    {
+        "id": 2,
+        "name": "Mouse Gamer Ultraligero",
+        "price": 59.50,
+        "image": "https://placehold.co/150x150/28a745/ffffff?text=Mouse",
+        "description": "Sensor de 16000 DPI, 8 botones programables."
+    },
+    {
+        "id": 3,
+        "name": "Monitor Curvo 27\" 144Hz",
+        "price": 349.00,
+        "image": "https://placehold.co/150x150/ffc107/343a40?text=Monitor",
+        "description": "Resolución QHD, tiempo de respuesta de 1ms."
+    },
+    {
+        "id": 4,
+        "name": "Auriculares Gaming",
+        "price": 120.00,
+        "image": "https://placehold.co/150x150/dc3545/ffffff?text=Auriculares",
+        "description": "Sonido envolvente 7.1, batería de larga duración."
+    }
+]

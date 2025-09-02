@@ -1,0 +1,548 @@
+[
+  {
+    "linea": "ALTO RENDIMIENTO",
+    "descripcion": "AMINO 7600",
+    "presentacion": "POTE-150 COMPRIMIDOS",
+    "contenido_neto_gramos": 285,
+    "cantidad_por_bulto": 12,
+    "precios": {
+      "distribuidor": {
+        "neto": 10853.55,
+        "con_iva": 13132.8
+      },
+      "mayorista": {
+        "neto": 11424.79,
+        "con_iva": 13824.0
+      },
+      "minorista": {
+        "neto": 14280.99,
+        "con_iva": 17280.0
+      }
+    }
+  },
+  {
+    "linea": "ALTO RENDIMIENTO",
+    "descripcion": "AMINO 7600",
+    "presentacion": "POTE-325 COMPRIMIDOS",
+    "contenido_neto_gramos": 618,
+    "cantidad_por_bulto": 12,
+    "precios": {
+      "distribuidor": {
+        "neto": 21707.11,
+        "con_iva": 26265.6
+      },
+      "mayorista": {
+        "neto": 22849.59,
+        "con_iva": 27648.0
+      },
+      "minorista": {
+        "neto": 28561.98,
+        "con_iva": 34560.0
+      }
+    }
+  },
+  {
+    "linea": "ALTO RENDIMIENTO",
+    "descripcion": "AMINO 9000-DULCE DE LECHE/FRUTILLA",
+    "presentacion": "DOYPACK-160 COMPRIMIDOS",
+    "contenido_neto_gramos": 480,
+    "cantidad_por_bulto": 12,
+    "precios": {
+      "distribuidor": {
+        "neto": 12888.6,
+        "con_iva": 15595.2
+      },
+      "mayorista": {
+        "neto": 13566.94,
+        "con_iva": 16416.0
+      },
+      "minorista": {
+        "neto": 16958.68,
+        "con_iva": 20520.0
+      }
+    }
+  },
+  {
+    "linea": "ALTO RENDIMIENTO",
+    "descripcion": "BCAA 4000",
+    "presentacion": "FRASCO-120 COMPRIMIDOS",
+    "contenido_neto_gramos": 168,
+    "cantidad_por_bulto": 24,
+    "precios": {
+      "distribuidor": {
+        "neto": 8321.06,
+        "con_iva": 10068.48
+      },
+      "mayorista": {
+        "neto": 8759.01,
+        "con_iva": 10598.4
+      },
+      "minorista": {
+        "neto": 10948.76,
+        "con_iva": 13248.0
+      }
+    }
+  },
+  {
+    "linea": "ALTO RENDIMIENTO",
+    "descripcion": "C.D.S. (CREATINE DELIVERY SYSTEM) - FRUTAS TROPICALES - KOSHER",
+    "presentacion": "DOYPACK-POLVO",
+    "contenido_neto_gramos": 800,
+    "cantidad_por_bulto": 12,
+    "precios": {
+      "distribuidor": {
+        "neto": 11848.46,
+        "con_iva": 14336.64
+      },
+      "mayorista": {
+        "neto": 12476.86,
+        "con_iva": 15091.2
+      },
+      "minorista": {
+        "neto": 15590.08,
+        "con_iva": 18864.0
+      }
+    }
+  },
+  {
+    "linea": "ALTO RENDIMIENTO",
+    "descripcion": "CREATINA MICRONIZADA-AFA-KOSHER",
+    "presentacion": "POTE-POLVO",
+    "contenido_neto_gramos": 250,
+    "cantidad_por_bulto": 12,
+    "precios": {
+      "distribuidor": {
+        "neto": 15413.57,
+        "con_iva": 18659.52
+      },
+      "mayorista": {
+        "neto": 16232.73,
+        "con_iva": 19641.6
+      },
+      "minorista": {
+        "neto": 20290.91,
+        "con_iva": 24552.0
+      }
+    }
+  },
+  {
+    "linea": "ALTO RENDIMIENTO",
+    "descripcion": "CREATINA MICRONIZADA-AFA-KOSHER",
+    "presentacion": "DOYPACK-POLVO",
+    "contenido_neto_gramos": 250,
+    "cantidad_por_bulto": 12,
+    "precios": {
+      "distribuidor": {
+        "neto": 15413.57,
+        "con_iva": 18659.52
+      },
+      "mayorista": {
+        "neto": 16232.73,
+        "con_iva": 19641.6
+      },
+      "minorista": {
+        "neto": 20290.91,
+        "con_iva": 24552.0
+      }
+    }
+  },
+  {
+    "linea": "ALTO RENDIMIENTO",
+    "descripcion": "CREATINA MICRONIZADA-AFA-KOSHER",
+    "presentacion": "DOYPACK-POLVO",
+    "contenido_neto_gramos": 500,
+    "cantidad_por_bulto": 12,
+    "precios": {
+      "distribuidor": {
+        "neto": 27956.84,
+        "con_iva": 33827.52
+      },
+      "mayorista": {
+        "neto": 29428.1,
+        "con_iva": 35596.8
+      },
+      "minorista": {
+        "neto": 36785.12,
+        "con_iva": 44508.0
+      }
+    }
+  },
+  {
+    "linea": "ALTO RENDIMIENTO",
+    "descripcion": "GLUTAMINA MICRONIZADA-AFA-KOSHER",
+    "presentacion": "DOYPACK-150 COMPRIMIDOS",
+    "contenido_neto_gramos": 120,
+    "cantidad_por_bulto": 12,
+    "precios": {
+      "distribuidor": {
+        "neto": 13978.43,
+        "con_iva": 16913.76
+      },
+      "mayorista": {
+        "neto": 14714.05,
+        "con_iva": 17808.0
+      },
+      "minorista": {
+        "neto": 18392.56,
+        "con_iva": 22252.0
+      }
+    }
+  },
+  {
+    "linea": "ALTO RENDIMIENTO",
+    "descripcion": "GLUTAMINA MICRONIZADA-AFA-KOSHER",
+    "presentacion": "DOYPACK-POLVO",
+    "contenido_neto_gramos": 300,
+    "cantidad_por_bulto": 12,
+    "precios": {
+      "distribuidor": {
+        "neto": 17184.79,
+        "con_iva": 20793.6
+      },
+      "mayorista": {
+        "neto": 18089.26,
+        "con_iva": 21888.0
+      },
+      "minorista": {
+        "neto": 22611.57,
+        "con_iva": 27360.0
+      }
+    }
+  },
+  {
+    "linea": "ALTO RENDIMIENTO",
+    "descripcion": "MULTIVITAMIN - KOSHER",
+    "presentacion": "FRASCO-60 COMPRIMIDOS",
+    "contenido_neto_gramos": 72,
+    "cantidad_por_bulto": 24,
+    "precios": {
+      "distribuidor": {
+        "neto": 6331.24,
+        "con_iva": 7660.8
+      },
+      "mayorista": {
+        "neto": 6664.46,
+        "con_iva": 8064.0
+      },
+      "minorista": {
+        "neto": 8330.58,
+        "con_iva": 10080.0
+      }
+    }
+  },
+  {
+    "linea": "ALTO RENDIMIENTO",
+    "descripcion": "OMEGA 3 EPA FISH OIL-KOSHER",
+    "presentacion": "FRASCO-60 CAPSULAS BLANDAS",
+    "contenido_neto_gramos": 84,
+    "cantidad_por_bulto": 25,
+    "precios": {
+      "distribuidor": {
+        "neto": 18993.72,
+        "con_iva": 22982.4
+      },
+      "mayorista": {
+        "neto": 19993.39,
+        "con_iva": 24192.0
+      },
+      "minorista": {
+        "neto": 24991.74,
+        "con_iva": 30240.0
+      }
+    }
+  },
+  {
+    "linea": "ALTO RENDIMIENTO",
+    "descripcion": "OMELETTE PROTEIN-JAMON Y QUESO, PIZZA",
+    "presentacion": "DISPLAY x 7 SOBRES",
+    "contenido_neto_gramos": 182,
+    "cantidad_por_bulto": 24,
+    "precios": {
+      "distribuidor": {
+        "neto": 9496.86,
+        "con_iva": 11491.2
+      },
+      "mayorista": {
+        "neto": 9996.69,
+        "con_iva": 12096.0
+      },
+      "minorista": {
+        "neto": 12495.87,
+        "con_iva": 15120.0
+      }
+    }
+  },
+  {
+    "linea": "ALTO RENDIMIENTO",
+    "descripcion": "ONE WEEK WHEY PROTEIN 7900-CHOCOLATE, VAINILLA",
+    "presentacion": "DISPLAY-7 SOBRES",
+    "contenido_neto_gramos": 175,
+    "cantidad_por_bulto": 24,
+    "precios": {
+      "distribuidor": {
+        "neto": 7303.54,
+        "con_iva": 8837.28
+      },
+      "mayorista": {
+        "neto": 7687.93,
+        "con_iva": 9302.4
+      },
+      "minorista": {
+        "neto": 9609.92,
+        "con_iva": 11628.0
+      }
+    }
+  },
+  {
+    "linea": "ALTO RENDIMIENTO",
+    "descripcion": "WAKE UP WHEY PROTEIN-CEREAL-CHOCOLATE",
+    "presentacion": "POTE-450 G",
+    "contenido_neto_gramos": 450,
+    "cantidad_por_bulto": 12,
+    "precios": {
+      "distribuidor": {
+        "neto": 17409.95,
+        "con_iva": 21066.0
+      },
+      "mayorista": {
+        "neto": 18326.24,
+        "con_iva": 22176.0
+      },
+      "minorista": {
+        "neto": 22907.85,
+        "con_iva": 27720.0
+      }
+    }
+  },
+  {
+    "linea": "ALTO RENDIMIENTO",
+    "descripcion": "WHEY PROTEIN 7900-CHOCOLATE-FRUTILLA-VAINILLA",
+    "presentacion": "DOYPACK-500 G",
+    "contenido_neto_gramos": 500,
+    "cantidad_por_bulto": 12,
+    "precios": {
+      "distribuidor": {
+        "neto": 16416.0,
+        "con_iva": 19863.36
+      },
+      "mayorista": {
+        "neto": 17280.0,
+        "con_iva": 20908.8
+      },
+      "minorista": {
+        "neto": 21600.0,
+        "con_iva": 26136.0
+      }
+    }
+  },
+  {
+    "linea": "ALTO RENDIMIENTO",
+    "descripcion": "WHEY PROTEIN 7900-CHOCOLATE-FRUTILLA-VAINILLA",
+    "presentacion": "POTE-1 KILO",
+    "contenido_neto_gramos": 1000,
+    "cantidad_por_bulto": 6,
+    "precios": {
+      "distribuidor": {
+        "neto": 30584.14,
+        "con_iva": 37006.08
+      },
+      "mayorista": {
+        "neto": 32193.8,
+        "con_iva": 38956.8
+      },
+      "minorista": {
+        "neto": 40242.23,
+        "con_iva": 48708.0
+      }
+    }
+  },
+  {
+    "linea": "LINEA PREMIUM",
+    "descripcion": "BCAA PURE - KOSHER",
+    "presentacion": "DOYPACK-250 G",
+    "contenido_neto_gramos": 250,
+    "cantidad_por_bulto": 12,
+    "precios": {
+      "distribuidor": {
+        "neto": 18993.72,
+        "con_iva": 22982.4
+      },
+      "mayorista": {
+        "neto": 19993.39,
+        "con_iva": 24192.0
+      },
+      "minorista": {
+        "neto": 24991.74,
+        "con_iva": 30240.0
+      }
+    }
+  },
+  {
+    "linea": "LINEA PREMIUM",
+    "descripcion": "L-GLUTAMINE POWDER-KOSHER",
+    "presentacion": "DOYPACK-250 G",
+    "contenido_neto_gramos": 250,
+    "cantidad_por_bulto": 12,
+    "precios": {
+      "distribuidor": {
+        "neto": 16142.27,
+        "con_iva": 19532.16
+      },
+      "mayorista": {
+        "neto": 17006.61,
+        "con_iva": 20572.8
+      },
+      "minorista": {
+        "neto": 21258.26,
+        "con_iva": 25728.0
+      }
+    }
+  },
+  {
+    "linea": "LINEA PREMIUM",
+    "descripcion": "WHEY PROTEIN PREMIUM-CHOCOLATE-FRUTILLA-VAINILLA-KOSHER",
+    "presentacion": "DOYPACK-500 G",
+    "contenido_neto_gramos": 500,
+    "cantidad_por_bulto": 12,
+    "precios": {
+      "distribuidor": {
+        "neto": 16963.2,
+        "con_iva": 20525.28
+      },
+      "mayorista": {
+        "neto": 17856.0,
+        "con_iva": 21600.96
+      },
+      "minorista": {
+        "neto": 22320.0,
+        "con_iva": 27000.48
+      }
+    }
+  },
+  {
+    "linea": "LINEA PREMIUM",
+    "descripcion": "WHEY PROTEIN PREMIUM-CHOCOLATE-FRUTILLA-VAINILLA-KOSHER",
+    "presentacion": "POTE-1 KILO",
+    "contenido_neto_gramos": 1000,
+    "cantidad_por_bulto": 6,
+    "precios": {
+      "distribuidor": {
+        "neto": 31599.98,
+        "con_iva": 38235.96
+      },
+      "mayorista": {
+        "neto": 33263.14,
+        "con_iva": 40248.42
+      },
+      "minorista": {
+        "neto": 41578.93,
+        "con_iva": 50310.51
+      }
+    }
+  },
+  {
+    "linea": "LINEA IRON",
+    "descripcion": "IRON DRINK",
+    "presentacion": "DOYPACK-400 G",
+    "contenido_neto_gramos": 400,
+    "cantidad_por_bulto": 12,
+    "precios": {
+      "distribuidor": {
+        "neto": 10944.0,
+        "con_iva": 13242.24
+      },
+      "mayorista": {
+        "neto": 11520.0,
+        "con_iva": 13939.2
+      },
+      "minorista": {
+        "neto": 14400.0,
+        "con_iva": 17424.0
+      }
+    }
+  },
+  {
+    "linea": "LINEA IRON",
+    "descripcion": "IRON GEL BCAA-AFA-GREEN APPLE-DELICIOUS COCOA",
+    "presentacion": "DISPLAY-6 UNIDADES",
+    "contenido_neto_gramos": 120,
+    "cantidad_por_bulto": 24,
+    "precios": {
+      "distribuidor": {
+        "neto": 3663.07,
+        "con_iva": 4432.32
+      },
+      "mayorista": {
+        "neto": 3855.87,
+        "con_iva": 4665.6
+      },
+      "minorista": {
+        "neto": 4819.83,
+        "con_iva": 5832.0
+      }
+    }
+  },
+  {
+    "linea": "LINEA BEAUTY",
+    "descripcion": "COLAGENO SPORTS-FRUTOS DEL BOSQUE/SIN SABOR",
+    "presentacion": "POTE-250 G",
+    "contenido_neto_gramos": 250,
+    "cantidad_por_bulto": 12,
+    "precios": {
+      "distribuidor": {
+        "neto": 11110.15,
+        "con_iva": 13443.2
+      },
+      "mayorista": {
+        "neto": 11694.9,
+        "con_iva": 14156.4
+      },
+      "minorista": {
+        "neto": 14618.62,
+        "con_iva": 17688.0
+      }
+    }
+  },
+  {
+    "linea": "LINEA BEAUTY",
+    "descripcion": "COLLAGEN BAR CHOCOLATE",
+    "presentacion": "DISPLAY-10 UNIDADES",
+    "contenido_neto_gramos": 450,
+    "cantidad_por_bulto": 24,
+    "precios": {
+      "distribuidor": {
+        "neto": 10853.55,
+        "con_iva": 13132.8
+      },
+      "mayorista": {
+        "neto": 11424.79,
+        "con_iva": 13824.0
+      },
+      "minorista": {
+        "neto": 14280.99,
+        "con_iva": 17280.0
+      }
+    }
+  },
+  {
+    "linea": "LINEA BEAUTY",
+    "descripcion": "VITA C + ZINC + VITAMINA D3",
+    "presentacion": "FRASCO-60 COMPRIMIDOS",
+    "contenido_neto_gramos": 60,
+    "cantidad_por_bulto": 24,
+    "precios": {
+      "distribuidor": {
+        "neto": 4124.71,
+        "con_iva": 4990.4
+      },
+      "mayorista": {
+        "neto": 4341.8,
+        "con_iva": 5253.6
+      },
+      "minorista": {
+        "neto": 5427.25,
+        "con_iva": 6564.0
+      }
+    }
+  }
+]

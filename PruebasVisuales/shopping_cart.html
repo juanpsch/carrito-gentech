@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gentech - Tu Carrito Premium</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1>Gentech <span class="header-subtitle">Tu Tienda Premium</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="#"><i class="fas fa-box-open"></i> Productos</a></li>
+                    <li><a href="#"><i class="fas fa-info-circle"></i> Acerca de</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-content">
+        <section class="products-section">
+            <h2 class="section-title">Nuestros Productos Disponibles</h2>
+            <div id="available-products" class="product-grid">
+                <div class="product-card">
+                    <img src="https://placehold.co/150/007bff/ffffff?text=Producto+A" alt="Producto A" class="product-image">
+                    <h3 class="product-name">Teclado Mecánico RGB</h3>
+                    <p class="product-description">Retroiluminación personalizable, switches Cherry MX.</p>
+                    <div class="product-footer">
+                        <span class="product-price">$99.99</span>
+                        <button class="btn-add-to-cart" data-id="1">Agregar <i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://placehold.co/150/28a745/ffffff?text=Producto+B" alt="Producto B" class="product-image">
+                    <h3 class="product-name">Mouse Gamer Ultraligero</h3>
+                    <p class="product-description">Sensor de 16000 DPI, 8 botones programables.</p>
+                    <div class="product-footer">
+                        <span class="product-price">$59.50</span>
+                        <button class="btn-add-to-cart" data-id="2">Agregar <i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://placehold.co/150/ffc107/343a40?text=Producto+C" alt="Producto C" class="product-image">
+                    <h3 class="product-name">Monitor Curvo 27" 144Hz</h3>
+                    <p class="product-description">Resolución QHD, tiempo de respuesta de 1ms.</p>
+                    <div class="product-footer">
+                        <span class="product-price">$349.00</span>
+                        <button class="btn-add-to-cart" data-id="3">Agregar <i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://placehold.co/150/dc3545/ffffff?text=Producto+D" alt="Producto D" class="product-image">
+                    <h3 class="product-name">Auriculares Gaming Inalámbricos</h3>
+                    <p class="product-description">Sonido envolvente 7.1, batería de larga duración.</p>
+                    <div class="product-footer">
+                        <span class="product-price">$120.00</span>
+                        <button class="btn-add-to-cart" data-id="4">Agregar <i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cart-section">
+            <h2 class="section-title">Tu Carrito de Compras</h2>
+            <div id="shopping-cart-container" class="cart-items-wrapper">
+                <p class="empty-cart-message">¡Tu carrito está vacío! Agrega algunos productos para empezar.</p>
+                </div>
+            <div class="cart-summary">
+                <p class="cart-total">Total: <span id="cart-total-value">$0.00</span></p>
+                <button id="checkout-button" class="btn-checkout" disabled>Finalizar Compra <i class="fas fa-credit-card"></i></button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2023 Gentech - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simulación de productos disponibles (como si vinieran de una DB)
+        const productsData = [
+            { id: 1, name: 'Teclado Mecánico RGB', price: 99.99, image: 'https://placehold.co/150/007bff/ffffff?text=Producto+A', description: 'Retroiluminación personalizable, switches Cherry MX.' },
+            { id: 2, name: 'Mouse Gamer Ultraligero', price: 59.50, image: 'https://placehold.co/150/28a745/ffffff?text=Producto+B', description: 'Sensor de 16000 DPI, 8 botones programables.' },
+            { id: 3, name: 'Monitor Curvo 27" 144Hz', price: 349.00, image: 'https://placehold.co/150/ffc107/343a40?text=Producto+C', description: 'Resolución QHD, tiempo de respuesta de 1ms.' },
+            { id: 4, name: 'Auriculares Gaming Inalámbricos', price: 120.00, image: 'https://placehold.co/150/dc3545/ffffff?text=Producto+D', description: 'Sonido envolvente 7.1, batería de larga duración.' },
+        ];
+
+        let cart = []; // Array para almacenar los productos en el carrito
+
+        const availableProductsDiv = document.getElementById('available-products');
+        const shoppingCartContainer = document.getElementById('shopping-cart-container');
+        const cartTotalValueSpan = document.getElementById('cart-total-value');
+        const checkoutButton = document.getElementById('checkout-button');
+
+        // Función para renderizar los productos disponibles (ya están en el HTML de ejemplo)
+        // Esto sería si los cargaras dinámicamente:
+        // function renderProducts() {
+        //     availableProductsDiv.innerHTML = productsData.map(product => `
+        //         <div class="product-card">
+        //             <img src="${product.image}" alt="${product.name}" class="product-image">
+        //             <h3 class="product-name">${product.name}</h3>
+        //             <p class="product-description">${product.description}</p>
+        //             <div class="product-footer">
+        //                 <span class="product-price">$${product.price.toFixed(2)}</span>
+        //                 <button class="btn-add-to-cart" data-id="${product.id}">Agregar <i class="fas fa-cart-plus"></i></button>
+        //             </div>
+        //         </div>
+        //     `).join('');
+        // }
+
+        // Función para renderizar el carrito
+        function renderCart() {
+            if (cart.length === 0) {
+                shoppingCartContainer.innerHTML = '<p class="empty-cart-message">¡Tu carrito está vacío! Agrega algunos productos para empezar.</p>';
+                checkoutButton.disabled = true;
+            } else {
+                shoppingCartContainer.innerHTML = cart.map(item => `
+                    <div class="cart-item" data-id="${item.id}">
+                        <img src="${item.image}" alt="${item.name}" class="cart-item-image">
+                        <div class="cart-item-details">
+                            <h4 class="cart-item-name">${item.name}</h4>
+                            <span class="cart-item-price">$${item.price.toFixed(2)}</span>
+                        </div>
+                        <div class="cart-item-quantity-controls">
+                            <button class="btn-quantity-minus" data-id="${item.id}"><i class="fas fa-minus"></i></button>
+                            <span class="cart-item-quantity">${item.quantity}</span>
+                            <button class="btn-quantity-plus" data-id="${item.id}"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <button class="btn-remove-item" data-id="${item.id}"><i class="fas fa-trash-alt"></i></button>
+                    </div>
+                `).join('');
+                checkoutButton.disabled = false;
+            }
+            updateCartTotal();
+        }
+
+        // Función para actualizar el total del carrito
+        function updateCartTotal() {
+            const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            cartTotalValueSpan.textContent = `$${total.toFixed(2)}`;
+        }
+
+        // Event Listeners para agregar al carrito
+        availableProductsDiv.addEventListener('click', (event) => {
+            if (event.target.classList.contains('btn-add-to-cart')) {
+                const productId = parseInt(event.target.dataset.id);
+                const productToAdd = productsData.find(p => p.id === productId);
+
+                const existingItem = cart.find(item => item.id === productId);
+                if (existingItem) {
+                    existingItem.quantity++;
+                } else {
+                    cart.push({ ...productToAdd, quantity: 1 });
+                }
+                renderCart();
+            }
+        });
+
+        // Event Listeners para controles del carrito (cantidad y eliminar)
+        shoppingCartContainer.addEventListener('click', (event) => {
+            const productId = parseInt(event.target.dataset.id);
+
+            if (event.target.classList.contains('btn-quantity-plus')) {
+                const item = cart.find(item => item.id === productId);
+                if (item) item.quantity++;
+            } else if (event.target.classList.contains('btn-quantity-minus')) {
+                const item = cart.find(item => item.id === productId);
+                if (item && item.quantity > 1) {
+                    item.quantity--;
+                } else if (item && item.quantity === 1) {
+                    cart = cart.filter(item => item.id !== productId); // Eliminar si la cantidad llega a 0
+                }
+            } else if (event.target.classList.contains('btn-remove-item')) {
+                cart = cart.filter(item => item.id !== productId);
+            }
+            renderCart();
+        });
+
+        // Event listener para el botón de finalizar compra
+        checkoutButton.addEventListener('click', () => {
+            alert('¡Gracias por tu compra! (Simulación de finalización de compra)');
+            cart = []; // Vaciar el carrito
+            renderCart();
+        });
+
+        // Inicializar la vista
+        // renderProducts(); // Si los productos fueran dinámicos, esta línea los renderizaría
+        renderCart();
+    </script>
+</body>
+</html>

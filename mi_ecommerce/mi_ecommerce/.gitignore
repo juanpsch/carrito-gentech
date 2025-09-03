@@ -1,0 +1,26 @@
+# Archivos de sistema operativo y editores de texto
+.DS_Store
+.vscode/
+Thumbs.db
+
+# Archivos de caché y de compilación
+build/
+dist/
+*.log
+*.tmp
+*.swp
+*.o
+
+# Dependencias y módulos
+node_modules/
+vendor/
+
+# Variables de entorno y archivos de configuración sensibles
+.env
+.env.local
+
+# IDE y archivos de proyecto
+.idea/
+.vs/
+*.iml
+venv/

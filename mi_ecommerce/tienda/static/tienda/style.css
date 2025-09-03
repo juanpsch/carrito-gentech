@@ -1,0 +1,305 @@
+/* Estilos generales del cuerpo de la página */
+body {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* Contenedor principal del catálogo, crece para llenar el espacio */
+.main-container {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+/* Contenedor para el bloque superior fijo */
+.catalog-header {
+    background-color: #f0f2f5;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Estilos de los elementos dentro del encabezado fijo */
+.catalog-header h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.price-list-selector {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    background-color: #ecf0f1;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.price-list-selector span {
+    font-size: 1.1em;
+    color: #34495e;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.price-list-selector select {
+    padding: 10px 15px;
+    border: 1px solid #c0c7d1;
+    border-radius: 6px;
+    background-color: #ffffff;
+    font-size: 1em;
+    color: #2c3e50;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%232c3e50' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.price-list-selector select:hover {
+    border-color: #3498db;
+}
+
+.price-list-selector select:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+    outline: none;
+}
+
+.search-input {
+    width: 100%;
+    max-width: 900px;
+    padding: 14px 18px;
+    font-size: 1.05em;
+    margin-bottom: 25px;
+    border: 1px solid #c0c7d1;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.2s;
+}
+
+.search-input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Sección de categorías */
+.category-section {
+    margin: 0 30px 40px;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.category-section h2 {
+    font-size: 1.8em;
+    color: #34495e;
+    border-bottom: 2px solid #e0e6eb;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+/* Contenedor de la lista de productos */
+.product-list {
+    margin: 0;
+}
+
+/* Estilos de cada ítem de producto */
+.product-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out;
+    flex-wrap: nowrap;
+}
+
+.product-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Información del producto: Permite que se encoja para dejar espacio */
+.item-info {
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 0;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.item-info h3 {
+    margin: 0;
+    font-size: 1.3em;
+    color: #2c3e50;
+    line-height: 1.4;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item-info p {
+    margin: 8px 0 0;
+    font-size: 0.95em;
+    color: #7f8c8d;
+}
+
+/* Controles de cantidad: Aseguramos que no se encoja */
+.item-controls {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    flex-basis: 120px; /* Le da un ancho base de 120px para que los botones sean siempre visibles */
+}
+
+.item-controls button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 0 8px;
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.item-controls button:hover {
+    background-color: #2980b9;
+    transform: translateY(-1px);
+}
+
+.item-controls button:active {
+    transform: scale(0.98);
+    background-color: #2980b9;
+}
+
+.item-controls .quantity-display {
+    min-width: 35px;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Contenedor del resumen de compra - Ahora no es fixed */
+.summary-container {
+    width: 350px;
+    min-width: 300px;
+    background-color: #ffffff;
+    border-left: 1px solid #e0e6eb;
+    padding: 30px;
+    box-shadow: -4px 0 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0; /* Impide que este contenedor se encoja */
+}
+
+.summary-container h2 {
+    font-size: 2em;
+    margin-top: 0;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+/* Lista de resumen de productos */
+.summary-list {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 25px;
+    border-top: 1px solid #e0e6eb;
+    padding-top: 15px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px dashed #e0e6eb;
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Mensaje de carrito vacío */
+.summary-list .empty-message {
+    text-align: center;
+    color: #95a5a6;
+    font-style: italic;
+    padding: 20px;
+    background-color: #fdfdfd;
+    border-radius: 8px;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.summary-list .empty-message strong {
+    color: #7f8c8d;
+}
+
+/* El total y el botón de checkout ahora siguen el contenido de la lista */
+.summary-total {
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: right;
+    color: #27ae60;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #e0e6eb;
+}
+
+.summary-total.empty {
+    color: #95a5a6;
+}
+
+/* Clase para ocultar productos no coincidentes con la búsqueda */
+.product-item.hidden {
+    display: none;
+}
+
+/* Botón de finalizar compra */
+.checkout-button {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 18px 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+    margin-top: 25px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(243, 156, 18, 0.3);
+}
+
+.checkout-button:hover:not(:disabled) {
+    background-color: #e67e22;
+    transform: translateY(-2px);
+}
+
+.checkout-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    box-shadow: none;
+}

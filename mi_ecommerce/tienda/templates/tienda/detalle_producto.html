@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ producto.DESCRIPCIÓN }}</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; line-height: 1.6; }
+        .container { max-width: 800px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 8px; }
+        h1 { color: #333; }
+        p strong { color: #555; }
+        a { display: inline-block; margin-top: 20px; text-decoration: none; color: white; background-color: royalblue; padding: 10px 15px; border-radius: 5px; }
+        a:hover { background-color: darkblue; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ producto.DESCRIPCIÓN }}</h1>
+        <p><strong>Categoría:</strong> {{ producto.Categoria }}</p>
+        <p><strong>Presentación:</strong> {{ producto.PRESENTACIÓN }}</p>
+        <p><strong>Contenido Neto:</strong> {{ producto.CONTENIDO_NETO }}</p>
+        <p><strong>Cantidad por bulto:</strong> {{ producto.CANTIDAD_POR_BULTO }}</p>
+        <p><strong>Precio Unitario Neto:</strong> {{ producto.PRECIO_UNITARIO_NETO }}</p>
+        <p><strong>Precio Unitario con IVA:</strong> {{ producto.PRECIO_UNITARIO_CON_IVA }}</p>
+
+        <a href="{% url 'catalogo' %}">Volver al Catálogo</a>
+    </div>
+</body>
+</html>

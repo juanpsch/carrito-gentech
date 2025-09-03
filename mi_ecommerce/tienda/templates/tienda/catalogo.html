@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo de Productos</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'tienda/style.css' %}">
+</head>
+<body>
+    <div class="main-container">
+        <div class="catalog-header">
+            <h1>Catálogo de Productos</h1>
+        
+            <div class="price-list-selector">
+                <span>Elegir lista de precios:</span>
+                <select onchange="window.location.href = this.value;">
+                    {% for source_key in data_sources %}
+                        <option value="{% url 'catalogo' %}?source={{ source_key }}" {% if source_key == selected_source %}selected{% endif %}>
+                            {{ source_key|capfirst }}
+                        </option>
+                    {% endfor %}
+                </select>
+            </div>
+            
+            <input type="text" id="searchInput" placeholder="Buscar productos..." class="search-input">
+        </div>
+
+        {% for categoria, productos in categorized_products.items %}
+            <div class="category-section">
+                <h2>{{ categoria }}</h2>
+                <div class="product-list">
+                    {% for producto in productos %}
+                        <div class="product-item"
+                             data-id="{{ producto.ID }}"
+                             data-precio="{{ producto.PRECIO_UNITARIO_CON_IVA }}"
+                             data-nombre="{{ producto.DESCRIPCION }}"
+                             data-presentacion="{{ producto.PRESENTACION }}"
+                             data-contenido="{{ producto.CONTENIDO_NETO }}">
+                            <div class="item-info">
+                                <h3>{{ producto.DESCRIPCION }}</h3>
+                                <p><strong>Presentación:</strong> {{ producto.PRESENTACION }}</p>
+                                <p><strong>Contenido:</strong> {{ producto.CONTENIDO_NETO }}</p>
+                                <p><strong>Precio:</strong> {{ producto.PRECIO_UNITARIO_CON_IVA }}</p>
+                            </div>
+                            <div class="item-controls">
+                                <button class="btn-remove">-</button>
+                                <span class="quantity-display">0</span>
+                                <button class="btn-add">+</button>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="summary-container">
+        <h2>Resumen de Compra</h2>
+        <div class="summary-list" id="summary-list">
+            </div>
+        <div class="summary-total" id="summary-total">Total: $0.00</div>
+        <button id="checkoutButton" class="checkout-button" disabled>Finalizar Compra</button>
+    </div>
+
+    {% load static %}
+    <script src="{% static 'tienda/script.js' %}"></script>
+</body>
+</html>
